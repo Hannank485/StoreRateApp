@@ -1,0 +1,94 @@
+### REGISTER
+POST http://localhost:3000/api/auth/register
+Content-Type: application/json
+
+{
+    "name": "Hannsnananananananananan",
+    "email": "kahsasnnangmail.com",
+    "password": "Hannan@123",
+    "address": "12312313"
+
+}
+###REGISTER 3
+POST http://localhost:3000/api/auth/register
+Content-Type: application/json
+
+{
+    "name": "Hannsnananananaananananan",
+    "email": "kahsasnnana@gmail.com",
+    "password": "Hannan@123",
+    "address": "12312313"
+
+}
+### LOGIN USER 3
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "kahsasnnana@gmail.com",
+    "password": "Hannan@123"
+}
+### LOGIN USER 1
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "kahannan@gmail.com",
+    "password": "1234"
+
+}
+### LOGIN USER 2
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+     "email": "kahsasnnan@gmail.com",
+
+    "password": "123"
+
+}
+###CHECK AUTH
+GET http://localhost:3000/api/auth/me
+Cookie: accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6IlVTRVIiLCJpYXQiOjE3NzMxNDQxMjIsImV4cCI6MTc3MzE1MTMyMn0._zDOIggbHXqRgO1ETQ9MzpmSloQfUdRs5aCOnGMWMYE
+
+###CHECK PASSWORD UPDATE
+PATCH http://localhost:3000/api/auth/
+Cookie: accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6IlVTRVIiLCJpYXQiOjE3NzMxNDQ2NDUsImV4cCI6MTc3MzE1MTg0NX0.UtrBDGszl2uIMN5j-4OboLsqn6xp0ei_ixBH5NgHEIo
+Content-Type: application/json
+
+{
+    "password": "1234"
+}
+
+
+### CREATE STORES
+POST http://localhost:3000/api/admin/stores
+Cookie: accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzczMjM2NjY4LCJleHAiOjE3NzMyNDM4Njh9.mKFlTzt-_R2jexf20jcj-5Kse61pfREpFnQoY8bTMuo
+Content-Type: application/json
+
+{
+    "name": "Hannan Stores12312311",
+    "email": "Hannanstore12@gmail.com",
+    "address": "1234 street",
+    "userId": 2
+}
+### GET STORE BY ID
+GET http://localhost:3000/api/stores/2
+Cookie: accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6Ik9XTkVSIiwiaWF0IjoxNzczMjM2ODY1LCJleHAiOjE3NzMyNDQwNjV9._0Z7Qn4IGjRrxwJmVeu7cWtod1mQs2euZFS5hn71jNo
+
+###Rating the STORE
+POST http://localhost:3000/api/rating/2
+Cookie: accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Nywicm9sZSI6IlVTRVIiLCJpYXQiOjE3NzMyMzY5MzksImV4cCI6MTc3MzI0NDEzOX0.K_2ygzPaEvluRYejgK0vrUeadznTkZ2FC4xa8P2U238
+Content-Type: application/json
+
+{
+    "rating": 3
+}
+
+###ADMIN GET ROUTE
+GET http://localhost:3000/api/admin/dashboard
+Cookie: accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzczMTcxNDEwLCJleHAiOjE3NzMxNzg2MTB9.OKVsmse4E2Eq2kczTBoZg3rlN1t3Oc0OZ3UQeWXl0WA
+
+###ADMIN GET USERS ROUTE
+GET     /admin/users
+Cookie: accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzczMTcxNDEwLCJleHAiOjE3NzMxNzg2MTB9.OKVsmse4E2Eq2kczTBoZg3rlN1t3Oc0OZ3UQeWXl0WA
