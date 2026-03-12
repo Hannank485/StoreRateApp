@@ -42,7 +42,7 @@ function Login({
   };
   return (
     <div className="w-full ">
-      <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-xs md:w-md">
+      <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-xs     md:w-md">
         <Card className="w-full ">
           <CardHeader className="flex flex-col gap-2 items-center">
             <CardTitle className="text-xl font-bold">Login</CardTitle>
